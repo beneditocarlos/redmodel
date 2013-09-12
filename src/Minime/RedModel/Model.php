@@ -5,8 +5,6 @@ namespace Minime\RedModel;
 use Minime\Annotations\Facade as Meta;
 use Minime\Annotations\Traits\Reader as AnnotationsReader;
 use R;
-use \DateTime;
-use \InvalidArgumentException;
 
 class Model
 {
@@ -295,11 +293,11 @@ class Model
 	/**
 	 * Get a fresh timestamp for the model.
 	 *
-	 * @return DateTime
+	 * @return \DateTime
 	 */
 	public function freshTimestamp()
 	{
-		return new DateTime;
+		return new \DateTime;
 	}
 
 	/**
